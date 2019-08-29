@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Form 2</title>
+  <style>
+    form {
+      border: 1px solid black;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <form action="http://fe.it-academy.by/TestForm.php" method="get"
@@ -13,9 +19,8 @@
          name="Username"
          maxlength="9"
          size="10"
-         autofocus/>
-  Password:<br/>
-  <input type="password" name="Psw"/><br/><br/>
+         autofocus/><br/> <!-- tghh-->
+  Password:<input type="password" name="Psw" style="background: blue; border: 1px red solid"/><br/><br/>
   <input type="checkbox"
          id="vehicle"
          name="Vehicle1"
