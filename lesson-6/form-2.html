@@ -5,13 +5,63 @@
   <title>Form 2</title>
 </head>
 <body>
-<form action="http://fe.it-academy.by/TestForm.php">
+<form action="http://fe.it-academy.by/TestForm.php" method="get">
   User name:<br/>
   <input type="text" name="Username"/>
   Password:<br/>
   <input type="password" name="Psw"/><br/><br/>
+  <input type="checkbox"
+         id="vehicle"
+         name="Vehicle1"
+         value="vehicle"><label for="vehicle">I have a car</label><br/>
+  <input type="checkbox"
+         name="Vehicle2"
+         id="bike"
+         value="bike"><label for="bike">I have a bike</label>
+  <br/>
+  <label>
+    <input type="checkbox"
+           id="boat"
+           name="Vehicle3"
+           value="boat"/>I have a boat</label>
+  <br/>
+
+  <input type="color" name="favorite-color" value="#ffff80"/>
+  <br/><br/>
+  Введите дату рождения:
+  <input type="date"
+         name="date-of-birth"
+         min="1980-01-01"
+         max="2020-01-01"/>
+  <br/><br/>
+  <input type="email" name="email"/>
+  <br/><br/>
+  Select file:<input type="file" name="My-file">
+  <br/><br/>
+  Введите количество<input type="number" min="1" max="5" name="quantity"/>
+  <br/><br/>
+  Громкость: 0<input type="range"
+                     min="0"
+                     max="100"
+                     value="77"
+                     name="% of smth"/>100
+  <br/><br/>
+  Telephone:<input type="phone"
+                   pattern="\+[0-9]{3}-[0-9]{3}"
+                   name="phone"
+                   placeholder="+111-222"/>
+  <br/><br/>
+  Searh Google:<input type="search" name="gougle-searh"/>
+  <br/><br/>
+  Home page:<input type="url" name="home-page">
+  <br/><br/>
+
   <input type="submit" value="Отправить" formtarget="_blank"/>
   <input type="reset" value="Отменить ввод"/>
 </form>
+
+<hr/>
+<br/>
+<a href="http://tut.by" target="_blank">Перейти на ТУТ</a>
 </body>
 </html>
