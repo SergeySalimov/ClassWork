@@ -16,11 +16,15 @@
   <!--novalidate>-->
   User name:<br/>
   <input type="text"
+         class="green-input margin20"
          name="Username"
          maxlength="9"
          size="10"
          autofocus/><br/> <!-- tghh-->
-  Password:<input type="password" name="Psw" style="background: blue; border: 1px red solid"/><br/><br/>
+  Password:<input type="password"
+                  name="Psw"
+                  class="rose-input"
+                  style="background: blue; border: 1px red solid"/><br/><br/>
   <input type="checkbox"
          id="vehicle"
          name="Vehicle1"
@@ -43,11 +47,15 @@
   <br/><br/>
   Введите дату рождения:
   <input type="date"
+         class="rose-input"
          name="date-of-birth"
          min="1980-01-01"
          max="2020-01-01"/>
   <br/><br/>
-  <input type="email" name="email" value="tt@tt.tt" readonly/>
+  <input type="email"
+         class="green-input"
+         name="email"
+         value="tt@tt.tt"/>
   <br/><br/>
   Select file:<input type="file" name="My-file">
   <br/><br/>

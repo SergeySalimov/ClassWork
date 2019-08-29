@@ -6,3 +6,17 @@ input {
 label {
     color: blue;
 }
+.green-input {
+    background: green;
+    color: white;
+}
+.margin20 {
+    margin-left: 20px;
+}
+.rose-input {
+    color: mistyrose;
+}
+#boat {
+    background: gray;
+    color: yellow;
+}
