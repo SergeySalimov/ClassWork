@@ -5,9 +5,15 @@
   <title>Form 2</title>
 </head>
 <body>
-<form action="http://fe.it-academy.by/TestForm.php" method="get">
+<form action="http://fe.it-academy.by/TestForm.php" method="get"
+      autocomplete="on">
+  <!--novalidate>-->
   User name:<br/>
-  <input type="text" name="Username"/>
+  <input type="text"
+         name="Username"
+         maxlength="9"
+         size="10"
+         autofocus/>
   Password:<br/>
   <input type="password" name="Psw"/><br/><br/>
   <input type="checkbox"
@@ -26,7 +32,9 @@
            value="boat"/>I have a boat</label>
   <br/>
 
-  <input type="color" name="favorite-color" value="#ffff80"/>
+  <input type="color"
+         name="favorite-color"
+         value="#ffff80"/>
   <br/><br/>
   Введите дату рождения:
   <input type="date"
@@ -34,7 +42,7 @@
          min="1980-01-01"
          max="2020-01-01"/>
   <br/><br/>
-  <input type="email" name="email"/>
+  <input type="email" name="email" value="tt@tt.tt" readonly/>
   <br/><br/>
   Select file:<input type="file" name="My-file">
   <br/><br/>
@@ -49,14 +57,26 @@
   Telephone:<input type="phone"
                    pattern="\+[0-9]{3}-[0-9]{3}"
                    name="phone"
-                   placeholder="+111-222"/>
+                   placeholder="+111-222"
+                   title="Format +111-222"
+                   required/>
   <br/><br/>
   Searh Google:<input type="search" name="gougle-searh"/>
   <br/><br/>
   Home page:<input type="url" name="home-page">
   <br/><br/>
+  Country code:<input type="text"
+                      name="country-code"
+                      pattern="[a-zA-z]{3}"
+                      title="Three letters code"
+                      placeholder="abc">
+  <br/><br/>
 
   <input type="submit" value="Отправить" formtarget="_blank"/>
+  <input type="submit"
+         value="Отправить без валидации"
+         formnovalidate
+         formtarget="_blank"/>
   <input type="reset" value="Отменить ввод"/>
 </form>
 
