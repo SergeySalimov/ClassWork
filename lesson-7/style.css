@@ -11,6 +11,8 @@ body {
     #sidebar {
         color: indianred;
     }
+
+}
 aside {
     border: 2px dotted #ff0000;
     border-top: none;
@@ -21,7 +23,7 @@ aside {
 }
 
 
-}
+
 .decorated {
     text-decoration: underline;
 }
