@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    background: gold;
+}
+
+
+
+.menu a {
+    color: red;
+}
+.menu + div {
+    background: #cccccc;
+}
+
+.menu + div a {
+    color: green;
+}
+div + a {
+    border: 1px solid #f761ff;
+}
+
+#menu li > a {
+    color: red;
+}
+hr {
+    color: black;
+}
+
+[type] {
+    border: 1px solid red;
+}
+
+[type=text] {
+    width: 200px;
+}
+
+[title], a[href*=ya] {
+    text-transform: uppercase;
+}
+a[href^=https] {
+    font-weight: bold;
+}
+a[href$=ru] {
+    color: brown;
+}
+input[type=checkbox] {
+    display: none
+}
+
+input[type=checkbox]:checked + label {
+    background: gray;
+}
+
+input:invalid {
+    border: 5px solid red;
+}
+
+input[type=checkbox]:checked + label::after {
+    content: "<<<";
+}
+
+input[type=checkbox]:checked + label::before {
+    content: ">>>";
+}
+
+p::after {
+    content: "->";
+    color: red;
+}
