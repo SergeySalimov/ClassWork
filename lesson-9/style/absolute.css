@@ -1,0 +1,26 @@
+body { margin: 0; /* Убираем отступы */ }
+.sidebar, .content {
+    position: absolute; /* Абсолютное позиционирование */
+    overflow: auto; /* Полосы прокрутки при необходимости */
+    padding: 10px; /* Поля вокруг текста */
+    top: 61px; /* Расстояние от верхнего края */
+    bottom: 0; /* Расстояние от нижнего края */
+}
+header {
+    height: 60px; /* Высота */
+    background: #FEDFC0; /* Цвет фона */
+    border-bottom: 1px solid #7B5427; /* Линия снизу */
+}
+header h1 {
+    line-height: 60px; /* Выравниваем по середине */
+    margin: 0 10px; /* Сдвигаем заголовок */
+}
+.sidebar {
+    width: 150px; /* Ширина */
+    background: #ECF5E4; /* Цвет фона */
+    border-right: 1px solid #231F20; /* Линия справа */
+}
+.content {
+    left: 0; /* Расстояние от левого края */
+    right: 0; /* Расстояние справа */
+}
