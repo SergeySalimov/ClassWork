@@ -1,0 +1,45 @@
+body {
+    background: #cccccc repeat;
+    backface-visibility: hidden;
+    /*opacity: 0.5;*/
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 75px;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 15px;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 63px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+
+}
+
+header nav ul li > a {
+    margin-left: 10px;
+    color: red;
+    text-decoration: underline;
+    font-size: 22px;
+
+}
+
+header nav ul li > a:hover {
+    text-decoration: none;
+    color: blue;
+    background-color: yellow;
+    cursor: grab;
+}
