@@ -35,4 +35,4 @@ function no() {
 }
 
 
-ask ('Do youdfdfdf want?', yes, no)
+ask ('dfdfdfd', )
